@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#current-weather">Current Weather</a></li>
+            <li><a href="#forecast">5-Day Forecast</a></li>
+            <li><a href="maps.html">Weather Maps</a></li>
+            <li><a href="#alerts">Weather Alerts</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-bar">
+        <input type="text" id="location" placeholder="Enter a location" />
+        <button id="getWeather">Get Weather</button>
+        <button id="useGeolocation">Use My Location</button>
+    </div>
+
+
+    <div class="container">
+       
+        <section id="current-weather">
+            <h2>Current Weather</h2>
+            <div id="weatherResult"></div>
+        </section>
+
+        <section id="forecast">
+            <h2>5-Day Forecast</h2>
+            <div id="forecastResult"></div>
+        </section>
+
+        <section id="alerts">
+            <h2>Weather Alerts</h2>
+            <div id="alertsResult">
+                <p>No alerts currently available.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Weather data provided by HM Weathers. © 2024 Weather Forecast</p>
+        <p><a href="#">Contact Us</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
